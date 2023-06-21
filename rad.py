@@ -15,8 +15,7 @@ def calculate_inhalation_dose(radionuclide, activity_concentration, data):
     return inhalation_dose
 
 # Read the data from the CSV file
-csv_file = 'rad.csv'
-data = pd.read_csv(csv_file)
+data = pd.read_csv('rad.csv')
 
 # Create a list of radionuclides for the dropdown menu
 radionuclides = data['Radionuclide'].tolist()
