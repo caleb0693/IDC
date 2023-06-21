@@ -32,4 +32,4 @@ activity_concentration = st.number_input('Enter Activity Concentration (Ci/L)')
 # Calculate and display the inhalation dose per liter
 if st.button('Calculate'):
     dose = calculate_inhalation_dose(radionuclide, activity_concentration, data)
-    st.write(f'Inhalation Dose Per Liter: {dose} mrem/L')
+    st.write(f'Inhalation Dose Per Liter: {dose:.4f} mrem/L')
